@@ -1,0 +1,25 @@
+{
+  "name": "rtsp-streamer",
+  "version": "1.0.0",
+  "description": "Node.js streaming server for RTP/RTSP",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "test": "mocha test --watch",
+    "dev": "node_modules/.bin/nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zappen999/rtsp-streamer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zappen999/rtsp-streamer/issues"
+  },
+  "homepage": "https://github.com/zappen999/rtsp-streamer#readme"
+}
