@@ -35,7 +35,10 @@ describe('Request', () => {
 
   describe('Get raw', () => {
     it('should construct a raw request string', () => {
-      
+      const req = new Request('DESCRIBE', 'host', 1234, '/', 2);
+      const expected = `DESCRIBE rtsp://host:1234/ RTSP/1.0\r\n` +
+      `CSeq: 2\r\n\r\n\r\n`;
+      expect(req.getRaw()).to.equal(expected);
     });
   });
 });

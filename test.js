@@ -1,3 +1,5 @@
+
+
 const host = 'freja.hiof.no';
 const port = 1935;
 const uri = '/rtplive/_definst_/hessdalen03.stream';
@@ -20,4 +22,4 @@ streamer
 .onClose(() => {
   console.log('Connection closed');
 })
-.connect();
+.subscribe();

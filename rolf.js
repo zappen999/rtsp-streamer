@@ -1,15 +1,21 @@
 const net = require('net');
 
 const Request = require('./request');
+const Response = require('./response');
 
-class RTSPStreamer {
+/**
+ * Library similar to `fetch` for RTSP calls
+ */
+
+class Rolf {
 
   /**
    * Constructor
    * @author Johan Kanefur <johan.canefur@gmail.com>
-   * @param  {string}  host Host to connect to
-   * @param  {integer} port Port to use
-   * @param  {string}  uri  URI to the rtsp resource
+   * @param   {string}  host Host to connect to
+   * @param   {integer} port Port to use
+   * @param   {string}  uri  URI to the rtsp resource
+   * @returns {Promise} Load promise
    */
   constructor(host, port, uri) {
     this._host = host;
@@ -130,4 +136,4 @@ class RTSPStreamer {
   }
 }
 
-module.exports = RTSPStreamer;
+module.exports = new Rolf;
